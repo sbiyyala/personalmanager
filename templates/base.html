@@ -1,0 +1,45 @@
+<!-- Shishir Biyyala Shishir.Biyyala@gmail.com -->
+<html>
+  <head>
+    <title>Personal Manager </title> 
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/grids-min.css">
+    <script src="/static/javascript/jquery-1.3.min.js"></script>
+  </head>
+  <body>
+
+<!---->
+<div id='title'>
+  <br/>
+<h4 align = "center">Hello, {{ user }}! Welcome to Personal Manager. Your one-stop place to store quick notes, bookmarks et al. </h4>
+
+  <div class='title_menu'>
+{% if user %}
+ <a href="{{ url }}">logout </a>&nbsp;&nbsp;&nbsp;&nbsp;
+{% else %}
+<a href="{{ url }}">Log in or register</a>
+{% endif %}
+</div>
+<div class='clear_both'>&nbsp;</div>
+</div>
+
+<!---->
+
+
+
+    
+<!---    {% if user %}
+logged in as <b><a href='/settings'>{{ user }}</a></b> <a href="{{ url }}">(log out?)</a>
+{% else %}
+<a href="{{ url }}">Log in or register</a>
+{% endif %}
+-->
+
+<div class="wrapper">
+  <p> Click <a href="/create">here</a> for a new note. </p>
+  {% block content %}
+  {% endblock content %}
+</div>
+  </body>
+</html>

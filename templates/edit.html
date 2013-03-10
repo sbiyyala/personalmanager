@@ -1,0 +1,46 @@
+<!-- Shishir Biyyala. Shishir.Biyyala@gmail.com -->
+{% extends "base.html" %}
+{% block content %}
+
+
+
+{% for n in notes %}
+
+  {% if note.key().id() == n.key().id() %}
+
+  <form class="sticky taped" style="width: 400px;" action="" method="post">
+
+    <label for="id_text">Text</label>: <br/>
+    
+    <!--<input type="text" name="text"  id="id_text" /> <br/>-->
+    <textarea name="text" id="id_text" cols="40" rows="10">
+       {{ note.text }}
+    </textarea><br/>
+
+    
+    <label for="id_status">Status</label>: <select name="status" id="id_status">
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+    <br/>
+    <a href ="/delete/{{ note.key().id() }}">Delete Note</a>
+       <br />      
+  
+  <br>
+  <input type="submit" value=submit />&nbsp;&nbsp; <input type="button" name="Cancel" value="Cancel" onclick="window.location = '/notes' " />
+</form>
+
+
+  {% else %}
+
+<p class="sticky taped" style="width: 400px;"> 
+<strong>{{ n.text }} </strong> <br />
+Created: {{ n.date.strftime('%Y-%m-%d')  }} <br/>
+    Status: {{ n.status }} 
+   
+        <br /> 
+
+{% endif %}
+{% endfor %}
+</p>
+{% endblock content %}

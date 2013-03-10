@@ -1,0 +1,19 @@
+<!-- Shishir Biyyala. Shishir.Biyyala@gmail.com -->
+{% extends "base.html" %}
+{% block content %}
+
+{% for note in notes %}
+<div class="sticky taped" style="width: 400px;">
+<p> 
+<strong>{{ note.text }} </strong> <br/><br/>
+<font size="2">
+Created: {{ note.date.strftime('%Y-%m-%d')  }} <br/>
+    Status: {{ note.status }} 
+    (<a href ="edit/{{ note.key().id() }}">edit </a>)
+
+        </font>
+ </p>
+</div>
+{% endfor %}
+</p>
+{% endblock content %}
