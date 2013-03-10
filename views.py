@@ -140,13 +140,10 @@ class EditNote(BaseHandler):
     def get(self, note_id):
         iden = int(note_id)
         note = db.get(db.Key.from_path('StickyNote', iden))
+        # strip the note off of html tags and send it to edit
         note.text = delinkify(note.text)
         notes = StickyNote.all()
         notes = notes.filter('author = ', users.get_current_user().nickname())
-        # For each of these notes, unlink them and send to display
-
-        for n in notes:
-            n.text = delinkify(n.text)
 
         template_values = createTemplate(self)
         template_values['note'] =  note
