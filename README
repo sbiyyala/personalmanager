@@ -15,4 +15,3 @@ Features:
 
 ** I have been a Django person in my current job, hence the organization of the python files resembles django-like structure. That's pretty much the only similarity with django. This way, there isn't any clutter which occurs with dumping everything into one python file.
 
-** It has been a conscious attempt not to use django-templates and other django API, as that wouldn't exactly depict my strict learning in the given time.
