@@ -14,3 +14,6 @@ Features:
 4. An extra feature is that each time you store a web link, it gets automatically referenced (linkified'), just like what happens when a link is emailed.  
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sbiyyala/personalmanager/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sbiyyala/personalmanager/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
