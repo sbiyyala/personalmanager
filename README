@@ -13,5 +13,4 @@ Features:
 
 4. An extra feature is that each time you store a web link, it gets automatically referenced (linkified'), just like what happens when a link is emailed.  
 
-** I have been a Django person in my current job, hence the organization of the python files resembles django-like structure. That's pretty much the only similarity with django. This way, there isn't any clutter which occurs with dumping everything into one python file.
-
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sbiyyala/personalmanager/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
