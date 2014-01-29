@@ -1,4 +1,3 @@
-# Shishir Biyyala
 Test App :: Personal Manager --
 Technologies: Google App Engine, Python, webapp2 
 
